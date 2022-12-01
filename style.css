@@ -1,0 +1,140 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box
+}
+
+body{
+  background: rgb(12, 132, 12);
+  width:100%;
+}
+
+header{
+  width:100% !important;
+  height: 80px;
+}
+
+img{
+  position: relative;
+  width: 120px;
+  left: 100px;
+  margin-left: -75px;
+}
+
+#computadoras-cartas, #jugador-cartas{
+  height: 180px;
+}
+
+.contenedor{
+  width: 90%;
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.boton{
+  width: 100%;
+}
+
+button{
+  font-size: 1rem !important;
+  margin-right: 20px;
+}
+
+.modal{
+  display:none;
+  position: absolute;
+  top: 150px;
+  left:600px; /* 600 */
+  width: 350px;
+  height: 300px;
+  background: white;
+  border-radius: 20px;
+}
+
+.modal img{
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.modal h1{
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top:30px;
+  margin-bottom: 30px;
+}
+
+.animacion{
+  display:block;
+  animation: aparecer .5s linear;
+}
+
+@keyframes aparecer {
+
+  0% {
+      transform: translateY(-10px);
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+  
+}
+
+@media screen  and (max-width: 700px){
+  button{
+      display:flex;
+      margin: 5px;
+      font-size: .7rem !important;
+  }
+
+  img{
+      position: relative;
+      top:10px;
+      width: 75px;
+      left: 57px;
+      margin-left: -56px;
+  }
+
+  .col h1{
+      font-size: 1.5rem;
+      margin: 20px 10px
+  }
+
+  .modal{
+      position: absolute;
+      top: 170px;
+      left:170px; /* 600 */
+      width: 180px;
+      height: 180px;
+      background: white;
+      border-radius: 20px;
+  }
+
+  .modal h1{
+      font-size: 1.2rem;
+  }
+
+  .modal img{
+      position: absolute;
+      margin-top: 75px;
+      margin-left: -35px;
+      object-fit: cover;
+      object-position: center;
+  }
+
+  #computadoras-cartas, #jugador-cartas{
+      height: 120px;
+      margin-left: 0;
+  }
+
+  .contenedor{
+      margin-left: 5px;
+  }
+}
